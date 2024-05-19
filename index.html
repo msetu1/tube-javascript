@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        redColor: '#FF1F3D',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="px-5 md:px-14 ">
+    <header class=" py-4 md:py-7 border-b-2">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div>
+                    <img src="Logo.png" alt="">
+                </div>
+            </div>
+            <div class="navbar-center ml-6 ">
+                <button onclick="shortByView()" class="btn text-xs md:text-sm">Sort by view
+                </button>
+            </div>
+            <div class="navbar-end">
+                <button id="openNewPageButton" class="btn bg-redColor text-white">
+                    Blog
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="w-full">
+        <div id="btn-collection" class="tabs  mx-auto flex justify-center gap-4 py-9 ">
+
+        </div>
+
+        <div class="grid justify-center">
+
+            <div id="card-container"
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  justify-between lg:justify-center  mx-auto ">
+            </div>
+
+        </div>
+
+
+    </main>
+    <script src="es6-api.js"></script>
+</body>
+
+</html>
